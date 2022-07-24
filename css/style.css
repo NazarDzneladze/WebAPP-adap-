@@ -25,3 +25,180 @@ html{
 *,*::before,*::after{
 	box-sizing: inherit;
 }
+
+
+
+
+.main-wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+.wrapper{
+	max-width: 1244px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.button{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* header style start */
+
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+
+.header__content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 100%;
+	padding-top: 36px;
+	align-items: center;
+}
+
+.header__logo img{
+	max-width: 100%;
+	margin-right: 50px;
+}
+
+.burger{
+	width: 30px;
+	height: 27px;
+	background-color: black;
+}
+
+
+/* header style end */
+
+/* intro  style start */
+
+.intro{
+	background-image: url(/img/intro-section-background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 250px;
+}
+
+.intro__title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	max-width: 100%;
+	margin-bottom: 20px;
+	font-size: 74px;
+}
+
+
+.intro__title-style{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 74px;
+	line-height:90px;
+	text-transform: uppercase;
+	color: #212733;
+	max-height: 90px;
+}
+
+@media (max-width:730px){
+
+	.intro__title-style{
+		font-size: 54px;
+	}
+	
+}
+
+@media (max-width:540px){
+
+	.intro__title-style{
+	font-size: 50px;
+	}
+}
+
+@media (max-width:500px){
+	.intro__title-style{
+		font-size: 40px;
+	}
+}
+
+@media (max-width:420px) and (min-width:375px){
+	.intro__title-style{
+		font-size: 35px;
+	}
+}
+
+@media (min-width:320px) and (max-width:375px){
+	.intro__title-style{
+		font-size: 28px;
+		font-weight:800;
+	}
+}
+
+
+
+
+.intro__sub-title{
+	margin-bottom: 60px;
+}
+
+.intro__sub-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro__sub-title-style{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+}
+
+.button__intro{
+	margin-bottom: 528px;
+}
+
+.intro__button-box{
+	text-align: center;
+}
+
+.button__intro{
+	background-color: transparent;
+	padding: 20px 32px 20px 30px;
+	border: 1px solid #000000;
+}
+
+.button__intro::after{
+	content: url(/img/button-arrow.svg);
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 44px;
+}
+
+
+
+/* intro style end */
