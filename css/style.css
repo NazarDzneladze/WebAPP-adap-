@@ -31,7 +31,6 @@ img{
 	height: auto;
 }
 
-
 .main-wrapper{
 	overflow: hidden;
 	display: flex;
@@ -49,7 +48,6 @@ img{
 	padding: 0 15px;
 }
 
-
 .button{
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -57,6 +55,24 @@ img{
 	font-size: 16px;
 	line-height: 20px;
 }
+
+.title{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 59px;
+	color: #000000;
+}
+
+.text{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+}
+
 
 /* header style start */
 
@@ -89,8 +105,9 @@ img{
 	background-color: black;
 }
 
-
 /* header style end */
+
+
 
 /* intro  style start */
 
@@ -123,6 +140,8 @@ img{
 	color: #212733;
 	max-height: 90px;
 }
+
+
 
 @media (max-width:730px){
 
@@ -157,9 +176,6 @@ img{
 		font-weight:800;
 	}
 }
-
-
-
 
 .intro__sub-title{
 	margin-bottom: 60px;
@@ -202,9 +218,9 @@ img{
 	margin-left: 44px;
 }
 
-
-
 /* intro style end */
+
+
 
 /* about company style start */
 
@@ -227,22 +243,10 @@ img{
 	height: auto;
 }
 
-
-
 .about-text__container{
 	max-width: 500px;
 	max-height: 391px;
 	text-align: right;
-}
-
-.about-company__title{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 48px;
-	line-height: 59px;
-	color: #000000;
-
 }
 
 .about-company__title:not(:last-child){
@@ -250,19 +254,12 @@ img{
 }
 
 .about-company__text{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 150%;
 	color: #606060;
 }
 
 .about-company__text:not(:last-child){
 	margin: 0 0 40px 0;
 }
-
-
 
 @media (max-width:1600px){
 
@@ -357,7 +354,185 @@ img{
 	}
 }
 
-
-
-
 /* about company style end */
+
+
+
+/* portfolio style start */
+
+.portfolio{
+	padding-top: 90px;
+}
+
+.portfolio-h3{
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.portfolio-box{
+	background-image: url(/img/portfolio-img.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	max-width: 100%;
+	height: 764px;
+	padding-top: 209px;
+	padding-right: 69px;
+	padding-left: 918px;
+}
+
+.portfolio-button{
+	background-color: transparent;
+	border: 1px solid #000000;
+}
+
+.portfolio-button::after{
+	content: url(/img/button-arrow.svg);
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 44px;
+}
+
+/* portfolio style end */
+
+
+
+/* what we offer style start */
+
+.what-we-offer{
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background-color: #1A1F25;
+}
+
+.what-we-offer__title{
+	color:  #FFFFFF;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.offer-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 630px;
+}
+
+.offer-item{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	height: auto;
+	padding: 46px 19px 46px 21px;
+}
+
+.offer-img-box{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.offer-item11{
+	width: 100%;
+	height: calc(100% / 3);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0;
+}
+
+.offer-text{
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.offer-item1, .offer-item2, .offer-item3, .offer-item4{
+	border-right: 1px solid #595959;
+	border-bottom: 1px solid #595959;
+}
+
+.offer-item5{
+	border-bottom: 1px solid #595959;
+}
+
+.offer-item6, .offer-item7, .offer-item8, .offer-item9{
+	border-right: 1px solid #595959;
+	border-bottom: 1px solid #595959;
+}
+
+.offer-item10{
+	border-bottom: 1px solid #595959;
+}
+
+.offer-item11-1, .offer-item11-2, .offer-item11-3{
+	width: calc(100% / 5);
+	padding: 46px 19px 46px 21px;
+}
+
+.offer-item11-2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #595959;
+	border-left:1px solid #595959;
+}
+
+.offer-item11-1{
+	border-left:1px solid #595959;
+}
+.offer-item11-3{
+	border-right:1px solid #595959;
+}
+
+
+.offer-button{
+	width: 185px;
+	height: 55px;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	color: white;
+}
+
+.offer-button::after{
+	content: url(/img/button-white-arrow.svg);
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 18px;
+}
+
+@media(max-width:700px){
+	.offer-text{
+		font-size: 14px;
+	}
+
+	.what-we-offer__title{
+		font-size: 38px;
+	}
+
+
+}
+
+@media(max-width:600px){
+	.offer-text{
+		font-size: 11px;
+	}
+
+	.what-we-offer__title{
+		font-size: 38px;
+	}
+
+	.offer-item11{
+		justify-content: space-between;
+	}
+	
+	.offer-item11-1, .offer-item11-2, .offer-item11-3{
+		border: none;
+	}
+	.offer-item11-1, .offer-item11-3{
+		flex-grow:2;
+	}
+}
+
+
+
+/* what we offer style end */
